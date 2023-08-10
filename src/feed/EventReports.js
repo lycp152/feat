@@ -1,6 +1,6 @@
 import React from "react";
 import "./Feed.css";
-import Sidebar from "./../Sidebar";
+import Sidebar from "../Sidebar";
 
 const mockPosts = [
   {
@@ -25,7 +25,7 @@ const mockPosts = [
   },
 ];
 
-const Results = () => {
+const EventReports = () => {
   return (
     <div className="page-with-sidebar">
       <Sidebar /> {/* サイドバーを追加 */}
@@ -50,4 +50,4 @@ const Results = () => {
   );
 };
 
-export default Results;
+export default EventReports;

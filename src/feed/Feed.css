@@ -1,9 +1,17 @@
-.home-feed {
+.page-with-sidebar {
+  display: flex;
+  height: calc(100vh - 60px); /* ヘッダーの高さを考慮 */
+  overflow-y: hidden; /* 縦方向のスクロールを無効にする */
+}
+
+.page-contentFeed {
+  flex-grow: 1;
+  padding: 10px;
+  overflow-y: auto; /* 縦方向のスクロールを有効にする */
+  margin-left: 290px;
   display: flex;
   flex-direction: column;
-  padding: 10px;
   border: 1px solid #ccc;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   width: 800px;
 }
 

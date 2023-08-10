@@ -14,7 +14,7 @@ const Sidebar = () => {
         <div className="spacer"></div> {/* 空白 */}
         <Link to="/tsumiage"># 📚 : 今日の積み上げ</Link>
         <Link to="/results"># 🏆 : 宣言・成果</Link>
-        <Link to="/talks"># 💬 : つぶやき・雑談</Link>
+        <Link to="/chat"># 💬 : つぶやき・雑談</Link>
         <div className="spacer"></div> {/* 空白 */}
         <Link to="/events"># 🚀 : イベント共有・告知</Link>
         <Link to="/eventreports"># 📝 : イベントレポート</Link>

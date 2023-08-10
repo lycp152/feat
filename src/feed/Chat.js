@@ -25,7 +25,7 @@ const mockPosts = [
   },
 ];
 
-const Results = () => {
+const Chat = () => {
   return (
     <div className="page-with-sidebar">
       <Sidebar /> {/* サイドバーを追加 */}
@@ -50,4 +50,4 @@ const Results = () => {
   );
 };
 
-export default Results;
+export default Chat;
