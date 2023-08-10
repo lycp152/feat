@@ -1,4 +1,3 @@
-/* App.css */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -15,13 +14,12 @@ body {
 .app-header {
   background-color: #FF4141;
   color: white;
-  padding: 30px;
+  padding: 20px;
 }
 
 .app-footer {
   background-color: #f7f7f7;
   padding: 10px;
-  position: fixed;
   bottom: 0;
   width: 100%;
 }
@@ -31,18 +29,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding-top: 105px; /* ヘッダーの高さ + 上の余白 */
-  padding-bottom: 80px; /* フッターの高さ + 下の余白 */
+  padding-top: 85px; /* ヘッダーの高さ + 上の余白 */
+  /* padding-bottom: 80px; フッターの高さ + 下の余白 */
+  overflow-x: hidden; /* 横方向のスクロールを無効にする */
 }
-
-.home-feed-with-sidebar {
-  display: flex;
-  height: calc(100vh - 60px); /* ヘッダーの高さを考慮 */
-}
-
-.home-feed-content {
-  flex-grow: 1;
-  padding: 20px;
-  margin-left: 290px;
-}
-
