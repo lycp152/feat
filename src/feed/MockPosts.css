@@ -2,10 +2,8 @@
   flex-grow: 1;
   padding: 10px;
   overflow-y: auto; /* 縦方向のスクロールを有効にする */
-  margin-left: 290px;
   display: flex;
   flex-direction: column;
-  /* border: 1px solid #ccc; */
 }
 
 .post-card {
