@@ -1,9 +1,3 @@
-.page-with-sidebar {
-  display: flex;
-  height: calc(100vh - 60px); /* ヘッダーの高さを考慮 */
-  overflow-y: hidden; /* 縦方向のスクロールを無効にする */
-}
-
 .page-contentFeed {
   flex-grow: 1;
   padding: 10px;
@@ -11,8 +5,7 @@
   margin-left: 290px;
   display: flex;
   flex-direction: column;
-  border: 1px solid #ccc;
-  width: 800px;
+  /* border: 1px solid #ccc; */
 }
 
 .post-card {
