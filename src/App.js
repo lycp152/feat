@@ -2,10 +2,10 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Header from "./Header";
-import Login from "./Login";
-import Signup from "./Signup";
+import Login from "./auth/Login";
+import Signup from "./auth/Login";
 import About from "./About";
-import HomeFeed from "./HomeFeed";
+import HomeFeed from "./feed/HomeFeed";
 import Sidebar from "./Sidebar";
 
 const App = () => {
