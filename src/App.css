@@ -32,15 +32,18 @@ body {
   align-items: flex-start;
   padding-top: 105px; /* ヘッダーの高さ + 上の余白 */
   padding-bottom: 80px; /* フッターの高さ + 下の余白 */
+  overflow-x: hidden; /* 横方向のスクロールを無効にする */
 }
 
 .home-feed-with-sidebar {
   display: flex;
   height: calc(100vh - 60px); /* ヘッダーの高さを考慮 */
+  overflow-y: hidden; /* 縦方向のスクロールを無効にする */
 }
 
 .home-feed-content {
   flex-grow: 1;
   padding: 20px;
+  overflow-y: auto; /* 縦方向のスクロールを有効にする */
   margin-left: 290px;
 }

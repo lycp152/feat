@@ -8,9 +8,9 @@ const mockPosts = [
     timestamp: "2023-07-05 11:30",
     content: "初めまして！",
     mediaUrl: "", // メディアのURLを追加
-    likes: 20,
-    repost: 10,
     comments: 8,
+    repost: 10,
+    likes: 20,
   },
   {
     id: 1,
@@ -18,9 +18,9 @@ const mockPosts = [
     timestamp: "2023-07-05 10:00",
     content: "最初の投稿！",
     mediaUrl: "", // メディアのURLを追加
-    likes: 10,
-    repost: 7,
     comments: 5,
+    repost: 7,
+    likes: 10,
   },
 ];
 
@@ -36,9 +36,9 @@ const HomeFeed = () => {
           <div className="post-content">{post.content}</div>
           {post.mediaUrl && <img src={post.mediaUrl} alt="Post Media" />} {/* メディアの表示 */}
           <div className="post-actions">
-            <button className="like-button">❤️ {post.likes}</button>
-            <button className="repost-button">🔁 {post.repost}</button>
             <button className="comment-button">💬 {post.comments}</button>
+            <button className="repost-button">🔁 {post.repost}</button>
+            <button className="like-button">❤️ {post.likes}</button>
           </div>
         </div>
       ))}
