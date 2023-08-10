@@ -3,24 +3,25 @@ import "./HomeFeed.css"; // 必要に応じてスタイリングを追加
 
 const mockPosts = [
   {
-    id: 1,
-    username: "user1",
-    timestamp: "2023-07-05 10:00:00",
-    content: "This is the first post.",
-    mediaUrl: "", // メディアのURLを追加
-    likes: 10,
-    comments: 5,
-  },
-  {
     id: 2,
-    username: "user2",
-    timestamp: "2023-07-05 11:30:00",
-    content: "Another post here.",
+    username: "フィーちゃん",
+    timestamp: "2023-07-05 11:30",
+    content: "初めまして！",
     mediaUrl: "", // メディアのURLを追加
     likes: 20,
+    repost: 10,
     comments: 8,
   },
-  // 他の投稿も同様に追加
+  {
+    id: 1,
+    username: "FEATさん",
+    timestamp: "2023-07-05 10:00",
+    content: "最初の投稿！",
+    mediaUrl: "", // メディアのURLを追加
+    likes: 10,
+    repost: 7,
+    comments: 5,
+  },
 ];
 
 const HomeFeed = () => {
@@ -35,8 +36,9 @@ const HomeFeed = () => {
           <div className="post-content">{post.content}</div>
           {post.mediaUrl && <img src={post.mediaUrl} alt="Post Media" />} {/* メディアの表示 */}
           <div className="post-actions">
-            <button className="like-button">いいね ({post.likes})</button>
-            <button className="comment-button">コメント ({post.comments})</button>
+            <button className="like-button">❤️ {post.likes}</button>
+            <button className="repost-button">🔁 {post.repost}</button>
+            <button className="comment-button">💬 {post.comments}</button>
           </div>
         </div>
       ))}
@@ -45,4 +47,3 @@ const HomeFeed = () => {
 };
 
 export default HomeFeed;
-
