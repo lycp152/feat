@@ -4,7 +4,7 @@ import "./App.css";
 import Header from "./Header";
 import Login from "./Login";
 import Signup from "./Signup";
-import Home from "./Home";
+import About from "./About";
 import HomeFeed from "./HomeFeed";
 import Sidebar from "./Sidebar";
 
@@ -15,7 +15,7 @@ const App = () => {
         <Header />
         <main className="app-main">
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<About />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/home/*" element={<HomeFeedWithSidebar />} />
