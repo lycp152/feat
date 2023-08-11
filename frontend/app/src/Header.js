@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./Header.css";
 
 const Header = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false); // ログイン状態を管理する状態変数
+  const [isLoggedIn] = useState(false); // ログイン状態を管理する状態変数
 
   const handleLogout = () => {
     // ログアウト処理を行う際に呼ばれる関数
@@ -24,9 +24,7 @@ const Header = () => {
           </>
         )}
         {/* ログインしている場合に表示 */}
-        {isLoggedIn && (
-          <button onClick={handleLogout}>ログアウト</button>
-        )}
+        {isLoggedIn && <button onClick={handleLogout}>ログアウト</button>}
       </div>
     </header>
   );

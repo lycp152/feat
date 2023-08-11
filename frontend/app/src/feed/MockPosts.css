@@ -2,10 +2,8 @@
   flex-grow: 1;
   padding: 10px;
   overflow-y: auto; /* 縦方向のスクロールを有効にする */
-  margin-left: 290px;
   display: flex;
   flex-direction: column;
-  /* border: 1px solid #ccc; */
 }
 
 .post-card {
@@ -15,16 +13,21 @@
 }
 
 .post-header {
-  display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
   font-size: 14px;
+  text-align: left;
 }
 
 .username {
   font-weight: bold;
   color: #333;
+}
+
+.userId {
+  margin-left: 3px;
+  color: #888;
 }
 
 .timestamp {
@@ -45,7 +48,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-top: 10px;
+  margin-top: 7px;
 }
 
 .like-button,

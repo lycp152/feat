@@ -1,0 +1,45 @@
+.notifications-container {
+  flex-grow: 1;
+  padding: 10px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.notifications-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.notification {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.notification-content {
+  flex: 1;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.message {
+  color: #333;
+}
+
+.timestamp {
+  color: #888;
+}
+
+.unread-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #ff4141;
+  border-radius: 50%;
+  margin-left: 10px;
+}
