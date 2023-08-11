@@ -3,9 +3,10 @@
   background-color: #333;
   color: #fff;
   padding: 20px;
-  top: 0;
-  left: 0;
   overflow-y: auto; /* 縦方向のスクロールを有効にする */
+  position: sticky;
+  top: 50px;
+  height: calc(100vh - 50px); /* ビューポートの高さからヘッダーの高さを引く */
 }
 
 .content {

@@ -3,20 +3,10 @@ import "./MockPosts.css";
 import MockPosts from "./MockPosts";
 
 const mockPostsData = [
-  // ここに好きなデータを追加できます
-  {
-    id: 2,
-    username: "フィーちゃん",
-    timestamp: "2023-07-05 11:30",
-    content: "初めまして！",
-    mediaUrl: "", // メディアのURLを追加
-    comments: 8,
-    repost: 10,
-    likes: 20,
-  },
   {
     id: 1,
     username: "FEATさん",
+    userId: "@featsan",
     timestamp: "2023-07-05 10:00",
     content: "最初の投稿！",
     mediaUrl: "", // メディアのURLを追加
@@ -24,9 +14,21 @@ const mockPostsData = [
     repost: 7,
     likes: 10,
   },
+  {
+    id: 2,
+    username: "フィーちゃん",
+    userId: "@feachan",
+    timestamp: "2023-07-05 11:30",
+    content: "初めまして！",
+    mediaUrl: "", // メディアのURLを追加
+    comments: 8,
+    repost: 10,
+    likes: 20,
+  },
+  // ここに好きなデータを追加できます
 ];
 
-const Results = () => {
+const HomeFeed = () => {
   return (
     <div className="page-contentFeed">
       <MockPosts posts={mockPostsData} />
@@ -34,4 +36,4 @@ const Results = () => {
   );
 };
 
-export default Results;
+export default HomeFeed;
