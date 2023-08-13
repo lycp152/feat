@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Header from "./Header";
@@ -17,17 +17,24 @@ import Projects from "./feed/Projects";
 import Surveys from "./feed/Surveys";
 import SidebarLayout from "./SidebarLayout";
 
-const isLogin = true;
-
 const App = () => {
+  const [isLogin, setIsLoggedIn] = useState(true);
   return (
     <div className="app">
       <Router>
-        <Header />
+        <Header isLogin={isLogin} setIsLoggedIn={setIsLoggedIn} />
         <main className="app-main">
           <Routes>
             {isLogin ? (
               <>
+                <Route
+                  path="/"
+                  element={
+                    <SidebarLayout>
+                      <HomeFeed />
+                    </SidebarLayout>
+                  }
+                />
                 <Route
                   path="/home/*"
                   element={
