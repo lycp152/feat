@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import "./Auth.css";
 
 const Login = () => {
@@ -18,7 +18,7 @@ const Login = () => {
 
     // ログイン処理
     // ログイン成功時にリダイレクト
-    navigate('/home');
+    navigate("/home");
   };
 
   return (
@@ -26,11 +26,19 @@ const Login = () => {
       <h2>ログイン</h2>
       <form className="auth-form" onSubmit={handleLogin}>
         <label htmlFor="username">ユーザー名</label>
-        <input type="text" id="username" value={username} onChange={(e) => setUsername(e.target.value)} />
-
+        <input
+          type="text"
+          id="username"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+        />
         <label htmlFor="password">パスワード</label>
-        <input type="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-
+        <input
+          type="password"
+          id="password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
         <p className="error-message">{error}</p> {/* エラーメッセージを表示 */}
         <button type="submit">ログイン</button>
       </form>

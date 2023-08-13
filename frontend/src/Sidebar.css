@@ -18,7 +18,9 @@
   display: flex;
   flex-direction: column;
   gap: 7px;
-  max-height: calc(100vh - 100px); /* サイドバー内のコンテンツがサイドバーの高さを超えた場合にスクロールバーを表示 */
+  max-height: calc(
+    100vh - 100px
+  ); /* サイドバー内のコンテンツがサイドバーの高さを超えた場合にスクロールバーを表示 */
 }
 
 .sidebar-nav a {
