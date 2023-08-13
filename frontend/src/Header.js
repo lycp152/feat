@@ -1,12 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Header.css";
 
 const Header = ({ isLogin, setIsLoggedIn }) => {
+  const navigation = useNavigate();
+
   const handleLogout = () => {
     // ログアウト処理を行う際に呼ばれる関数
     // ログアウト処理が完了したら setIsLoggedIn(false) を実行してログアウト状態にする
     setIsLoggedIn(false);
+    // ログアウト後に遷移する場所を指定する（例えば、トップページ）
+    navigation("/");
   };
 
   return (
@@ -18,16 +22,14 @@ const Header = ({ isLogin, setIsLoggedIn }) => {
         {/* ログインしていない場合に表示 */}
         {!isLogin && (
           <>
-            <Link to="/login">ログイン</Link>
-            <Link to="/signup">サインアップ</Link>
+            <button onClick={() => navigation("/login")}>ログイン</button>
+            <button onClick={() => navigation("/signup")}>サインアップ</button>
           </>
         )}
         {/* ログインしている場合に表示 */}
         {isLogin && (
           <>
-            <button onClick={handleLogout} Link to="/">
-              ログアウト
-            </button>
+            <button onClick={handleLogout}>ログアウト</button>
           </>
         )}
       </div>

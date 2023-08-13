@@ -22,11 +22,16 @@
 
 .header-links {
   display: flex;
-  gap: 20px;
+  gap: 10px;
 }
 
-.header-links a {
+button {
   text-decoration: none;
   color: #fff;
+  background-color: transparent;
+  border: none;
+  font-size: medium;
   font-weight: bold;
+  padding: 5px;
+  cursor: pointer;
 }

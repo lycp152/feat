@@ -1,12 +1,13 @@
 .sidebar {
-  width: 250px;
   background-color: #333;
   color: #fff;
-  padding: 20px;
+  padding: 15px;
+  padding-right: 17px;
   overflow-y: auto; /* 縦方向のスクロールを有効にする */
-  position: sticky;
-  top: 50px;
-  height: calc(100vh - 50px); /* ビューポートの高さからヘッダーの高さを引く */
+  position: fixed; /* 画面の左側に固定位置 */
+  top: 0; /* 画面上部からの距離 */
+  bottom: 0; /* 画面下部に向かって伸びる */
+  width: 250px; /* サイドバーの幅 */
 }
 
 .content {
@@ -17,13 +18,14 @@
 .sidebar-nav {
   display: flex;
   flex-direction: column;
-  gap: 7px;
-  max-height: calc(
-    100vh - 100px
-  ); /* サイドバー内のコンテンツがサイドバーの高さを超えた場合にスクロールバーを表示 */
+  gap: 2px;
+  max-height: 100%; /* サイドバーの高さを画面の高さいっぱいにする */
+  overflow-y: auto; /* サイドバー内のコンテンツがサイドバーの高さを超えた場合にスクロールバーを表示 */
 }
 
 .sidebar-nav a {
+  padding: 2px 10px;
+  border-radius: 4px;
   text-decoration: none;
   color: white;
   font-size: 18px;
