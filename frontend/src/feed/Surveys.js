@@ -1,6 +1,5 @@
 import React from "react";
-import "./MockPosts.css";
-import MockPosts from "./MockPosts";
+import FeedLayout from "./FeedLayout";
 
 const mockPostsData = [
   {
@@ -31,11 +30,7 @@ const mockPostsData = [
 ];
 
 const Surveys = () => {
-  return (
-    <div className="page-contentFeed">
-      <MockPosts posts={mockPostsData} />
-    </div>
-  );
+  return <FeedLayout posts={mockPostsData} />;
 };
 
 export default Surveys;

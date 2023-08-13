@@ -1,6 +1,5 @@
 import React from "react";
-import "../feed/MockPosts.css";
-import MockPosts from "../feed/MockPosts";
+import MockPosts from "../feed/PostsLayout";
 
 const mockPostsData = [
   {

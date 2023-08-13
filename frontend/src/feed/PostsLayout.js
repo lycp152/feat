@@ -1,5 +1,5 @@
 import React from "react";
-import PostForm from "../postform/PostForm"; // PostForm コンポーネントをインポート
+import "./PostsLayout.css";
 
 const MockPosts = ({ posts }) => {
   return (
@@ -21,9 +21,6 @@ const MockPosts = ({ posts }) => {
           </div>
         </div>
       ))}
-      <div className="post-card">
-        <PostForm />
-      </div>
     </div>
   );
 };
