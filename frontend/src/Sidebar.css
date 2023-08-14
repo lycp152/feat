@@ -5,6 +5,7 @@
   padding-right: 17px;
   overflow-y: auto; /* 縦方向のスクロールを有効にする */
   position: sticky;
+  white-space: nowrap; /* テキストの折り返しを禁止 */
 }
 
 .content {

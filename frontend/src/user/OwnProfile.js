@@ -1,5 +1,4 @@
 import React from "react";
-import "./OwnProfile.css";
 import UserPosts from "./UserPosts";
 import UserProfile from "./UserProfile";
 
