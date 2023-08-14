@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Header from "./Header";
-import About from "./About";
+import Header from "./header/Header";
+import About from "./about/About";
 import Login from "./auth/Login";
 import Signup from "./auth/Signup";
 import HomeFeed from "./feed/HomeFeed";
 import Notifications from "./menu/Notifications";
-import OwnProfile from "./user/OwnProfile";
+import OwnProfile from "./menu/OwnProfile";
 import Tsumiage from "./feed/Tsumiage";
 import Results from "./feed/Results";
 import Chat from "./feed/Chat";
@@ -15,8 +15,8 @@ import Events from "./feed/Events";
 import EventReports from "./feed/EventReports";
 import Projects from "./feed/Projects";
 import Surveys from "./feed/Surveys";
-import SidebarLayout from "./SidebarLayout";
-import SearchPage from "./SearchPage";
+import SidebarLayout from "./sideber/SidebarLayout";
+import SearchPage from "./searchPage/SearchPage";
 
 const App = () => {
   const [isLogin, setIsLoggedIn] = useState(true);

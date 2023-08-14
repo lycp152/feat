@@ -1,5 +1,5 @@
 import React from "react";
-import FeedLayout from "./FeedLayout";
+import FeedLayout from "../feedLayout/FeedLayout";
 
 const mockPostsData = [
   {
