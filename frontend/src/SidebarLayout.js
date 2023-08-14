@@ -5,7 +5,7 @@ const SidebarLayout = ({ children }) => {
   return (
     <>
       <Sidebar />
-      {children}
+      <div className="main-content">{children}</div>
     </>
   );
 };
