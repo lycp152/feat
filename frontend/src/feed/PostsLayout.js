@@ -1,7 +1,7 @@
 import React from "react";
 import "./PostsLayout.css";
 
-const MockPosts = ({ posts }) => {
+const PostsLayout = ({ posts }) => {
   return (
     <div>
       {/* 投稿をマップ表示 */}
@@ -25,4 +25,4 @@ const MockPosts = ({ posts }) => {
   );
 };
 
-export default MockPosts;
+export default PostsLayout;

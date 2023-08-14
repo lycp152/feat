@@ -1,13 +1,16 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
+import { Link, useNavigate } from "react-router-dom";
 import "./Header.css";
 
-const Header = () => {
-  const [isLoggedIn] = useState(false); // ログイン状態を管理する状態変数
+const Header = ({ isLogin, setIsLoggedIn }) => {
+  const navigation = useNavigate();
 
   const handleLogout = () => {
     // ログアウト処理を行う際に呼ばれる関数
     // ログアウト処理が完了したら setIsLoggedIn(false) を実行してログアウト状態にする
+    setIsLoggedIn(false);
+    // ログアウト後に遷移する場所を指定する（例えば、トップページ）
+    navigation("/");
   };
 
   return (
@@ -17,14 +20,18 @@ const Header = () => {
       </Link>
       <div className="header-links">
         {/* ログインしていない場合に表示 */}
-        {!isLoggedIn && (
+        {!isLogin && (
           <>
-            <Link to="/login">ログイン</Link>
-            <Link to="/signup">サインアップ</Link>
+            <button onClick={() => navigation("/login")}>ログイン</button>
+            <button onClick={() => navigation("/signup")}>サインアップ</button>
           </>
         )}
         {/* ログインしている場合に表示 */}
-        {isLoggedIn && <button onClick={handleLogout}>ログアウト</button>}
+        {isLogin && (
+          <>
+            <button onClick={handleLogout}>ログアウト</button>
+          </>
+        )}
       </div>
     </header>
   );

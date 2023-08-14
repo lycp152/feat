@@ -1,15 +1,17 @@
 import React from "react";
-import MockPosts from "./PostsLayout";
+import PostsLayout from "./PostsLayout";
 import PostForm from "../postform/PostForm";
+import SearchBox from "../searchbox/SearchBox";
 
 const FeedLayout = ({ posts }) => {
   return (
-    <div className="page-contentFeed">
-      <MockPosts posts={posts} />
+    <>
+      <SearchBox />
+      <PostsLayout posts={posts} />
       <div className="post-card">
         <PostForm />
       </div>
-    </div>
+    </>
   );
 };
 

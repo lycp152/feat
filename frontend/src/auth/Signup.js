@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import "./Auth.css";
 
 const Signup = () => {
@@ -19,7 +19,7 @@ const Signup = () => {
 
     // サインアップ処理
     // サインアップ成功時にリダイレクト
-    navigate('/home');
+    navigate("/home");
   };
 
   return (
@@ -27,14 +27,26 @@ const Signup = () => {
       <h2>サインアップ</h2>
       <form className="auth-form" onSubmit={handleSignup}>
         <label htmlFor="username">ユーザー名</label>
-        <input type="text" id="username" value={username} onChange={(e) => setUsername(e.target.value)} />
-
+        <input
+          type="text"
+          id="username"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+        />
         <label htmlFor="email">メールアドレス</label>
-        <input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-
+        <input
+          type="email"
+          id="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
         <label htmlFor="password">パスワード</label>
-        <input type="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-
+        <input
+          type="password"
+          id="password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
         <p className="error-message">{error}</p> {/* エラーメッセージを表示 */}
         <button type="submit">サインアップ</button>
       </form>

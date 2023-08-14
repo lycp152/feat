@@ -12,7 +12,7 @@ body {
 }
 
 .app-header {
-  background-color: #FF4141;
+  background-color: #ff4141;
   color: white;
   padding: 20px;
 }
@@ -30,4 +30,6 @@ body {
   align-items: flex-start;
   margin-top: 85px; /* ヘッダーの高さ + 上の余白 */
   overflow-x: hidden; /* 横方向のスクロールを無効にする */
+  display: flex;
+  overflow: hidden;
 }
