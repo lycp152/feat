@@ -7,7 +7,7 @@ const Sidebar = () => {
     <div className="sidebar">
       <nav className="sidebar-nav">
         <Link to="/home"># 🏠 : ホーム</Link>
-        <Link to="/explore"># 🔍 : 検索</Link>
+        <Link to="/search"># 🔍 : 検索</Link>
         <Link to="/notifications"># 🔔 : 通知</Link>
         <Link to="/messages"># ✉️ : メッセージ</Link>
         <Link to="/profile"># 👤 : プロフィール</Link>

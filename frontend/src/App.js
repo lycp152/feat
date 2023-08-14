@@ -16,6 +16,7 @@ import EventReports from "./feed/EventReports";
 import Projects from "./feed/Projects";
 import Surveys from "./feed/Surveys";
 import SidebarLayout from "./SidebarLayout";
+import SearchPage from "./SearchPage";
 
 const App = () => {
   const [isLogin, setIsLoggedIn] = useState(true);
@@ -40,6 +41,14 @@ const App = () => {
                   element={
                     <SidebarLayout>
                       <HomeFeed />
+                    </SidebarLayout>
+                  }
+                />
+                <Route
+                  path="/search/*"
+                  element={
+                    <SidebarLayout>
+                      <SearchPage />
                     </SidebarLayout>
                   }
                 />
