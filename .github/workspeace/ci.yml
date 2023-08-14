@@ -1,0 +1,13 @@
+  rome:
+    name: Run rome scanning 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code        #コードを持ってくる
+        uses: actions/checkout@v3
+
+      - name: Install Rome         #romeをインストールする
+        run: |
+          npm install rome@12.0.0
+
+      - name: Run Rome             #romeを実行
+        run: npx rome check ./frontend/src
