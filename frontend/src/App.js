@@ -7,7 +7,7 @@ import Login from "./auth/Login";
 import Signup from "./auth/Signup";
 import HomeFeed from "./feed/HomeFeed";
 import Notifications from "./menu/Notifications";
-import OwnProfile from "./menu/OwnProfile";
+import MyProfile from "./menu/MyProfile";
 import Tsumiage from "./feed/Tsumiage";
 import Results from "./feed/Results";
 import Chat from "./feed/Chat";
@@ -56,7 +56,7 @@ const App = () => {
                   path="/profile/*"
                   element={
                     <SidebarLayout>
-                      <OwnProfile />
+                      <MyProfile />
                     </SidebarLayout>
                   }
                 />

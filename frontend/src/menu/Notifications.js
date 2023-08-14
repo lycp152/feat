@@ -5,21 +5,21 @@ const mockNotifications = [
   {
     id: 1,
     username: "にゃんこ",
-    message: "さんがあなたの投稿をいいねしました",
+    activityMessage: "さんがあなたの投稿をいいねしました",
     timestamp: "1分前",
     read: false,
   },
   {
     id: 2,
     username: "ほげほげ",
-    message: "さんにフォローされました",
+    activityMessage: "さんにフォローされました",
     timestamp: "5分前",
     read: true,
   },
   {
     id: 3,
     username: "ほげほげ",
-    message: "さんがあなたの投稿をリポストしました",
+    activityMessage: "さんがあなたの投稿をリポストしました",
     timestamp: "10分前",
     read: true,
   },
@@ -38,7 +38,9 @@ const Notifications = () => {
           >
             <div className="notification-content">
               <span className="username">{notification.username}</span>
-              <span className="message">{notification.message}</span>
+              <span className="activityMessage">
+                {notification.activityMessage}
+              </span>
               <span className="timestamp">{notification.timestamp}</span>
             </div>
             {!notification.read && <span className="unread-dot" />}
