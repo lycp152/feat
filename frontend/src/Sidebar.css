@@ -6,6 +6,8 @@
   overflow-y: auto; /* 縦方向のスクロールを有効にする */
   position: sticky;
   white-space: nowrap; /* テキストの折り返しを禁止 */
+  padding-bottom: 32768px;
+  margin-bottom: -32768px;
 }
 
 .content {
