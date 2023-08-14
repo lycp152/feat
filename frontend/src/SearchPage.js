@@ -9,7 +9,7 @@ const SearchPage = () => {
 
   return (
     <div className="main-content">
-      <h1>検索</h1>
+      <h2>検索</h2>
       <SearchBox onSearch={handleSearch} />
     </div>
   );
