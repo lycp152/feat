@@ -1,6 +1,6 @@
 import React from "react";
-import UserPosts from "./UserPosts";
-import UserProfile from "./UserProfile";
+import UserPosts from "../user/UserPosts";
+import UserProfile from "../user/UserProfile";
 
 const Profile = () => {
   const userProfile = {

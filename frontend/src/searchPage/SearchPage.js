@@ -1,5 +1,5 @@
 import React from "react";
-import SearchBox from "./searchbox/SearchBox";
+import SearchBox from "../searchbox/SearchBox";
 
 const SearchPage = () => {
   const handleSearch = (query) => {
