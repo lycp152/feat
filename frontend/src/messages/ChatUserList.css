@@ -1,0 +1,27 @@
+.user-list {
+  background-color: #f2f2f2;
+  border-right: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* 画面の高さいっぱいに */
+  overflow-y: auto; /* コンテンツがはみ出る場合にスクロールバーを表示 */
+  position: sticky;
+  white-space: nowrap; /* テキストの折り返しを禁止 */
+  padding-bottom: 32768px;
+  margin-bottom: -32768px;
+}
+
+.user {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.user:hover {
+  background-color: #ddd;
+}
+
+.active {
+  background-color: #007bff;
+  color: white;
+}

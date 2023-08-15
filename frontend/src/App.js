@@ -7,10 +7,11 @@ import Login from "./auth/Login";
 import Signup from "./auth/Signup";
 import HomeFeed from "./feed/HomeFeed";
 import Notifications from "./menu/Notifications";
+import Messages from "./messages/Messages";
 import MyProfile from "./menu/MyProfile";
 import Tsumiage from "./feed/Tsumiage";
 import Results from "./feed/Results";
-import Chat from "./feed/Chat";
+import SmallTalk from "./feed/SmallTalk";
 import Events from "./feed/Events";
 import EventReports from "./feed/EventReports";
 import Projects from "./feed/Projects";
@@ -53,6 +54,14 @@ const App = () => {
                   }
                 />
                 <Route
+                  path="/messages/*"
+                  element={
+                    <SidebarLayout>
+                      <Messages />
+                    </SidebarLayout>
+                  }
+                />
+                <Route
                   path="/profile/*"
                   element={
                     <SidebarLayout>
@@ -85,10 +94,10 @@ const App = () => {
                   }
                 />
                 <Route
-                  path="/chat/*"
+                  path="/smalltalk/*"
                   element={
                     <SidebarLayout>
-                      <Chat />
+                      <SmallTalk />
                     </SidebarLayout>
                   }
                 />

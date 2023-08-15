@@ -19,6 +19,7 @@
 .post-form input[type="file"] {
   float: left;
   margin-bottom: 10px;
+  border: none;
 }
 
 .post-form button {
