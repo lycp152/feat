@@ -12,9 +12,13 @@ const UserProfile = ({ userProfile }) => {
       <div className="username">{userProfile.username}</div>
       <div className="user-id">{userProfile.userId}</div>
       <div className="follow-info">
-        <div className="follow-number">フォロー中 {userProfile.following}</div>
-        <div className="follower-number">
-          フォロワー {userProfile.followers}
+        <div className="follow">
+          <span className="bold-number">{userProfile.following}</span>{" "}
+          フォロー中
+        </div>
+        <div className="follower">
+          <span className="bold-number">{userProfile.followers}</span>{" "}
+          フォロワー
         </div>
       </div>
     </div>

@@ -27,8 +27,8 @@ const mockPostsData = [
   // ここに好きなデータを追加できます
 ];
 
-const Chat = () => {
+const SmallTalk = () => {
   return <FeedLayout posts={mockPostsData} />;
 };
 
-export default Chat;
+export default SmallTalk;
